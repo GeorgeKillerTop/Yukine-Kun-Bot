@@ -1,19 +1,5 @@
 const Discord = require ("discord.js");
-const ytdl = require('ytdl-core');
-const ms = require("ms");
-const YouTube = require('simple-youtube-api');
-const GOOGLE_API_KEY = "AIzaSyDUmo-BtB5oQr5Y3RSgYYBMj9rFKMr-W2s";
-const prefix1 = "$";
-const prefix2 = "%";
-const prefix3 = "?";
-const fs = require("fs");
-const youtube = new YouTube(GOOGLE_API_KEY);
-const queue = new Map();
-
 var bot = new Discord.Client();
-var servers = {};
-
-let coins = require("./coins.json");
 
 bot.on("ready", function() {
     console.log("Ready");
